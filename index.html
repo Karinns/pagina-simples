@@ -1,0 +1,178 @@
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="css/css.css" />
+    <link rel="stylesheet" href="css/mobile.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="themes/default/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="container">
+
+        <section class="topbar">
+            <div class="topbar__container">
+                <a>11 1234-1234</a>
+                <a>11 1234-1234</a>
+            </div>
+        </section>
+
+        <section class="menu">
+            <div class="logoimage">
+                <img src="images/logo.png" />
+
+            </div>
+
+            <div class="menu__container">
+                <ul class="dropdown">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#empresa">Empresa</a>
+
+                        <ul class="dropdown__1">
+                            <li><a href="#">Submenu 1</a></li>
+                            <li><a href="#">Submenu 1</a></li>
+                            <li><a href="#">Submenu 1</a>
+
+                                <ul class="dropdown__2">
+                                    <li><a href="#">Submenu 2</a></li>
+                                    <li><a href="#">Submenu 2</a></li>
+                                    <li><a href="#">Submenu 2</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#clientes">Clientes</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+        </section>
+
+
+        <section class="slide">
+            <div class="slide__container">
+                <div id="wrapper">
+                    <div class="slider-wrapper theme-default">
+                        <div id="slider" class="nivoSlider">
+                            <img src="images/1.jpg" />
+                            <img src="images/2.jpg" />
+                        </div>
+                    </div>
+        </section>
+
+
+        <section class="center">
+            <div class="center__container">
+                <div class="center__title">Title
+                    <a>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    </a>
+                </div>
+
+                <img src="images/3.jpg" />
+            </div>
+
+        </section>
+
+        <section class="image">
+            <div class="title">Title</div>
+
+            <div class="image__container">
+
+                <div class="image__son">
+                    <img src="images/4.jpg" />
+                    <h1><a href="#">Imagem 1</a></h1>
+
+                </div>
+
+                <div class="image__son">
+                    <img src="images/5.jpg" />
+                    <h1><a href="#">Imagem 2</a></h1>
+
+                </div>
+
+                <div class="image__son">
+                    <img src="images/6.jpg" />
+                    <h1><a href="#">Imagem 3</a></h1>
+
+                </div>
+
+                <div class="image__son">
+                    <img src="images/7.jpg" />
+                    <h1> <a href="#">Imagem 4</a></h1>
+
+                </div>
+
+            </div>
+    </div>
+
+    </section>
+
+
+
+    <section class="footer">
+        <div class="footer__container">
+            <a href="#Home">Home</a>
+            <a href="#Empresa">Empresa</a>
+            <a href="#Clientes">Clientes</a>
+            <a href="#Contatos">Contatos</a>
+        </div>
+    </section>
+
+</body>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+
+<script type="text/javascript">
+    $(window).load(function () {
+        $('#slider').nivoSlider();
+    });
+</script>
+
+<script type="text/javascript">
+    $(window).load(function () {
+        $('#slider').nivoSlider({
+            effect: 'random',
+            slices: 15,
+            boxCols: 8,
+            boxRows: 4,
+            animSpeed: 500,
+            pauseTime: 3000,
+            startSlide: 0,
+            directionNav: true,
+            controlNav: true,
+            controlNavThumbs: false,
+            pauseOnHover: true,
+            manualAdvance: false,
+            prevText: 'Prev',
+            nextText: 'Next',
+            randomStart: false,
+            beforeChange: function () { },
+            afterChange: function () { },
+            slideshowEnd: function () { },
+            lastSlide: function () { },
+            afterLoad: function () { }
+        });
+    });
+</script>
+
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+</script>
+
+</html>
